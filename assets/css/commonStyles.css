@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&display=swap');
+@font-face {
+    font-family: Halo;
+    src: url(../Halo.ttf);
+}
+
+@font-face {
+    font-family: HaloOutline;
+    src: url(../HaloOutline.ttf);
+}
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Cinzel', serif;
+    color: hsl(0, 0%, 0%);
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background: url(https://www.pixel4k.com/wp-content/uploads/2018/09/halo-infinite-4k_1537690193.jpg);
+    background-size: cover;
+    height: 100%;
+}
+
+/* SCROLLBAR */
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: rgba(85, 84, 84, 0.364);
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #161616fb;
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #046fa9;
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(88, 194, 250);
+  }
+
+/* NAVBAR */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+header {
+    min-height: 40vh;
+}
+
+#title{
+    text-align: center;
+    font-size:3em;
+    font-weight:900;
+    color: rgb(255, 255, 255);
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow{
+    from{
+        text-shadow: 0 0 5px #afe4a0, 0px 0px 20px #000000;
+    }
+
+    to{
+        text-shadow: 0 0 20px #49FF18, 0px 0px 20px #000000;
+    }
+}
+
+main p {
+    font-size: 1.1em;
+    line-height: 27px;
+    color: #fff;
+}
+
+.container,
+.container-inner {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.container {
+    max-width: 3000px;
+    position: relative;
+    display: grid;
+    grid-template-columns: 2fr 6fr 2fr;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.container-inner {
+    max-width: 1000px;
+}
+
+nav {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(187, 233, 249, 0.085));
+    /* background-color: transparent; */
+    backdrop-filter: blur(3px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1em;
+    z-index: 9;
+    transition: 0.7s;
+
+}
+
+.brand {
+    font-size: 4.0em;
+    margin-bottom: 10px;
+    margin-right: 50px;
+    font-family: HaloOutline;
+    transition: 0.2s;
+    z-index: 1000;
+}
+.brand:hover{
+    font-family: Halo;
+}
+
+nav .container-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav .container ul {
+    width: 100%;
+    margin: 0 1em;
+}
+
+nav .container ul:nth-child(2) {
+    text-align: right;
+}
+
+nav .container ul li {
+    display: inline-block;
+    margin: 0 2.7em;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: 0.3s;
+    font-weight: 600;
+    color: #fff;
+}
+
+nav a:hover {
+    color: #5da5e8;
+}
+
+
+
+
+
+nav .fa-bars {
+    font-size: 1.8em;
+    cursor: pointer;
+    transition: 0.3s;
+    text-align: right;
+    color: white;
+    z-index: 11;
+}
+
+nav .fa-bars:hover {
+    color: #5da5e8;
+}
+
+.menu {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.30), rgba(187, 233, 249, 0.085));
+    /* background-color: transparent; */
+    backdrop-filter: blur(10px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 1.3em;
+    height: 0;
+    opacity: 0;
+    transition: all 0.7s cubic-bezier(0.74, -0.03, 0.83, 0.67);
+    z-index: 10;
+    overflow-y: hidden;
+}
+
+.logo {
+    width: 15em;
+}
+
+.menu ul {
+    margin: 1em auto;
+}
+
+.menu li {
+    margin: 1em 0;
+}
+
+.menu>div {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.10), rgba(187, 233, 249, 0.085));
+    /* background-color: transparent; */
+    backdrop-filter: blur(15px);
+}
+
+.menu>div::-webkit-scrollbar {
+    display: inline-block;
+    width: 80px;
+}
+
+.menu .social-media {
+    margin: 2em 0;
+}
+.fab {
+    color: #fff;
+}
+.social-media li {
+    display: inline-block;
+    margin: 0 0.5em;
+}
+
+/*Classes for Javascript */
+.menu-open {
+    height: 100vh;
+    opacity: 1;
+}
+
+.navbar-active {
+    padding: 1em;
+}
+
+/* RESPONSIVENESS */
+@media screen and (max-width: 800px) {
+    nav .container-inner {
+        display: none;
+    }
+
+    nav .container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .menu form {
+        display: none;
+    }
+}

@@ -1,0 +1,50 @@
+div.gallery {
+    border: 5px solid #ccc;
+    z-index: 10;
+  }
+  
+  div.gallery:hover {
+    border: 3px solid rgb(3, 166, 198);
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+  div.desc {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(187, 233, 249, 0.085));
+    backdrop-filter: blur(6px);
+    padding: 15px;
+    font-size: 24px;
+    text-align: center;
+    animation: glow 1s ease-in-out infinite alternate;
+    font-weight: 700;
+  }
+  
+  
+  .responsive {
+    padding: 0 6px; 
+    float: left;
+    width: 46.99999%;
+  }
+  
+  
+  @media only screen and (max-width: 700px) {
+    .responsive {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .responsive {
+      width: 100%;
+    }
+  }
+  
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
