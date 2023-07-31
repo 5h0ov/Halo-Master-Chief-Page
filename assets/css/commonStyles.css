@@ -55,7 +55,7 @@ ul {
 }
 
 header {
-    min-height: 40vh;
+    min-height: 60vh;
 }
 
 #title{
@@ -213,7 +213,9 @@ nav .fa-bars:hover {
     justify-content: start;
     align-items: center;
     flex-direction: column;
+    padding: 6em 1em 3em 1em;
     height: 100%;
+    overflow-y: scroll;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.10), rgba(187, 233, 249, 0.085));
     /* background-color: transparent; */
     backdrop-filter: blur(15px);
