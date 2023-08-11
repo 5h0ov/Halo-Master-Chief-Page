@@ -370,3 +370,31 @@ nav .fa-bars:hover {
     }
  
  }
+
+/* SCROLL TO TOP */
+#myBtn{
+    display: block;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 10000;
+    box-shadow: 0 0 10px #afe4a0;
+    text-decoration: none;
+    text-align: center;
+    font-size: 40px;
+    opacity: 0.8;
+    background: #046fa9;
+    color: #f4e3c4;
+    text-shadow: 0 0 20px #49FF18, 0px 0px 20px #000000;
+    cursor: pointer;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    transition: background 0.5s, transform 0.5s;
+  }
+  
+  #myBtn:hover {
+    background-color: #013807;
+    box-shadow: 0 0 10px #333a40;
+    transform: translateY(-5px);
+  }
