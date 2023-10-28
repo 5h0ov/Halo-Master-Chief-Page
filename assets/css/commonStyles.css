@@ -231,6 +231,25 @@ nav .fa-bars:hover {
 }
 .fab {
     color: #fff;
+    transition: 0.5s;
+}
+.fab:hover{
+    transform: scale(1.4);
+}
+.fa-github:hover{
+    color: #000000;
+}
+.fa-instagram:hover{
+    color: #fe2b6b;
+}
+.fa-linkedin:hover{
+    color: #0077ffb7;
+}
+.fa-twitter:hover{
+    color: #00a2ff;
+}
+.fa-youtube:hover{
+    color: #ff0000;
 }
 .social-media li {
     display: inline-block;
