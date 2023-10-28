@@ -55,7 +55,7 @@ ul {
 }
 
 header {
-    min-height: 60vh;
+    min-height: 40vh;
 }
 
 #title{
@@ -80,6 +80,14 @@ main p {
     font-size: 1.1em;
     line-height: 27px;
     color: #fff;
+}
+
+.subtitle{
+    text-align: center;
+    padding: 20px;
+    font-size: 2em;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
 }
 
 .container,
@@ -309,3 +317,23 @@ nav .fa-bars:hover {
     box-shadow: 0 0 10px #333a40;
     transform: translateY(-5px);
   }
+
+  footer{
+    padding: 20px 30px 20px 30px;
+    font-size: 1.6em;
+    font-weight: 600;
+    color: white;
+    text-shadow: 1px 1px 10px rgb(31, 155, 0);
+    text-align: center;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+footer a{
+    color: white;
+    text-shadow: 1px 1px 10px rgb(31, 155, 0);
+}
+
+footer a:hover{
+ color: rgb(31, 155, 0);
+ text-shadow: 1px 1px 1px black;
+}
